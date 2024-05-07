@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 50px 50px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #34114b;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Dropdown {
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    appearance: none;
+}
+
+.Name, .Pass{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.error-message {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    display: none;
+    position: fixed;
+    top: 85%;
+    left: 85%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 20%;
+    height: 10%;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: #34114b;
+}
+
+.Username, .Password, .Confirm, .Email{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-top: 35px;
+    height: 70px;
+    background-color: #34114b;
+    color:white;
+    width: 100%;
+    max-width: 500px;
+}
+
+.Username::placeholder, .Password::placeholder, .Confirm::placeholder, .Email::placeholder{
+    color: white;
+}
+
+.Dropdown{
+    text-align: center;
+}
+
+
+.box-buttons {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+}
+
+.Login {
+    padding-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    background-color: #34114b;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.Login:hover {
+    background-color: white;
+    color: #34114b;
+    border: 2px solid #34114b;
+}
+
+.Cancel {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    background-color: #34114b;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Register:hover {
+    background-color: white;
+    color: #34114b;
+    border: 2px solid #34114b;
+}
+
+.Register {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    background-color: #34114b;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Cancel:hover {
+    background-color: white;
+    color: #34114b;
+    border: 2px solid #34114b;
+}
+
+.box{
+    padding-top: 5%;
+    border-radius: 20px;
+    font-family:"Roboto", sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    align-items: center;
+    background-image: url("../directory/Images/Login.png");
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50% !important;
+    height: 30%;
+    overflow: auto;
+  }
+
+.blur-background {
+  filter: blur(2px);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 30px;
+  border: 1px solid black;
+  margin: 40px auto;
+}
+  
+  .close {
+    color: #aaa;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 600px) {
+    .Username, .Password, .Confirm{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: -30px;
+    }
+    .box-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px;
+        margin-bottom: -40px;
+    }
+    .Login, .Register {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
